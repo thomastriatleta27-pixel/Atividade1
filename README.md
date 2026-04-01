@@ -7,15 +7,17 @@ Processar lotes de questões utilizando múltiplos modelos de Linguagem de Grand
 ## 📂 Estrutura de Arquivos
 
 ### 📝 Questões Abertas (Lote 11 a 20)
-Arquivos processados utilizando as IAs **Llama 3.3 70B**, **Llama 3.1 8B** e **Qwen 2.5**.
-* `oab-ai-classifier-abertas.py`: Script principal de automação e integração com APIs (Groq/HuggingFace).
+Filtro das Questões em dois formatos
 * `lote__abertas_thomas_oab_benc-11-20.xml`: Dados estruturados em XML.
 * `lote__abertas_thomas_oab_benc-11-20.xml.csv`: Exportação dos resultados em formato CSV.
 
 ### 🔒 Questões Fechadas (Lote 107 a 212)
+Filtro das Questões em dois formatos
 Resultados da curadoria de questões de múltipla escolha.
-* `lote_thomas_oab_bec_fechadas_107__a_212.xml`: Base de dados estruturada.
-* `lote__fecahdas_thomas_oab_benc-107_a_212.csv`: Tabela de dados consolidada.
+* `lote_thomas_oab_bec_fechadas_107__a_212.xml`:  Dados estruturados em XML.
+* `lote__fecahdas_thomas_oab_benc-107_a_212.csv`: Exportação dos resultados em formato CSV.
+
+### 🔒 Curadoria Questões Abertas e Fechada
 
 ---
 
@@ -27,6 +29,5 @@ Resultados da curadoria de questões de múltipla escolha.
 * **Bibliotecas:** `pandas`, `groq`, `huggingface_hub`, `datasets`, `fpdf`.
 
 ## 🧑‍💻 Autor
-**Thomás**
-* NOC Assistant | Estudante de Computação
-* Foco em Redes, Virtualização e Inteligência Artificial aplicada.
+**Thomás Araujo**
+
