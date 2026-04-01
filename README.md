@@ -1,9 +1,9 @@
 # Atividade1
  AVANÇADOS EM ENGENHARIA DE SOFTWARE E SISTEMAS DE INFORMAÇÃO-Atividade1
 
- Filtro de questões abertas Lote 11 a 20: lote__abertas_thomas_oab_benc-11-20.xml
+ Filtro de questões abertas Lote 11 a 20: lote__abertas_thomas_oab_benc-11-20.xml / lote__abertas_thomas_oab_benc-11-20.csv
 
- Filtro de questões abertas Lote 107 a 212: lote_thomas_oab_bec_fechadas_107__a_212.xml
+ Filtro de questões abertas Lote 107 a 212: lote_thomas_oab_bec_fechadas_107__a_212.xml / lote_thomas_oab_bec_fechadas_107__a_212.csv
 
 Analista Jurídico 1 -> Para utilização do dataset de questões abertas:Curadoria_questoes_abertas_thomas_11_a_20.xlsx
 
