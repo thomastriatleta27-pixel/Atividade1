@@ -1,16 +1,124 @@
-# Atividade1
- AVANÇADOS EM ENGENHARIA DE SOFTWARE E SISTEMAS DE INFORMAÇÃO-Atividade1
+RELATÓRIO AUTOMATIZADO COM LLMS (OAB BENCH)
 
- # Dados filtrados do dataset
- Filtro de questões abertas Lote 11 a 20: lote__abertas_thomas_oab_benc-11-20.xml / lote__abertas_thomas_oab_benc-11-20.csv
- Filtro de questões abertas Lote 107 a 212: lote_thomas_oab_bec_fechadas_107__a_212.xml / lote_thomas_oab_bec_fechadas_107__a_212.csv
- 
- # Curadoria
-Analista Jurídico 1 -> Para utilização do dataset de questões abertas:Curadoria_questoes_abertas_thomas_11_a_20.xlsx
-Analista Jurídico 2 -> Para utilização do dataset de questões fechadas:Curadoria_questoes_abertas_thomas_107_a_212.xlsx
+Este projeto utiliza múltiplos modelos de IA para responder questões abertas do dataset OAB Bench, gerando automaticamente um relatório em PDF com as respostas.
 
-# Resultados
-O resultado das Questões Abertas: Relatorio_Thomas_Lote_11_20_questoes_abertas.pdf
-O resultado das Questões Fechadas:Relatorio_Thomas_Final_Questoes_fechadas_107_212.pdf
+---
 
+TECNOLOGIAS UTILIZADAS
 
+* Groq API (LLAMA 3.3 70B e 3.1 8B)
+* Hugging Face (Qwen 2.5)
+* Google Colab
+* Python
+* FPDF (geração de PDF)
+
+---
+
+DATASET
+
+Utilizado dataset público:
+maritaca-ai/oab-bench
+
+---
+
+COMO EXECUTAR NO GOOGLE COLAB
+
+1. Acesse o Colab:
+   https://colab.research.google.com/
+
+---
+
+2. Instale as dependências:
+
+!pip install groq
+!pip install fpdf
+!pip install huggingface_hub datasets
+
+---
+
+3. Configure suas chaves de API:
+
+CHAVE_GROQ = "SUA_CHAVE_GROQ"
+CHAVE_HF   = "SUA_CHAVE_HF"
+
+IMPORTANTE:
+Nunca compartilhe suas chaves publicamente.
+
+---
+
+4. Execute o código
+
+Rode todas as células do notebook.
+
+O script irá:
+
+* Carregar o dataset
+* Processar as questões
+* Consultar 3 modelos de IA:
+
+  * LLAMA 70B (alta qualidade)
+  * LLAMA 8B (rápido)
+  * Qwen 2.5 (estável)
+* Gerar um relatório final em PDF
+
+---
+
+SAÍDA
+
+Arquivo gerado:
+Relatorio_Thomas_Lote_11_20.pdf
+
+Para baixar no Colab:
+
+from google.colab import files
+files.download("Relatorio_Thomas_Lote_11_20.pdf")
+
+---
+
+ESTRUTURA DO PROJETO
+
+* Entrada: questões abertas da OAB
+* Processamento: múltiplas LLMs
+* Saída: PDF comparativo com respostas
+
+---
+
+POSSÍVEIS PROBLEMAS
+
+Erro 400 (Groq):
+
+* Pode ser limite de requisição
+* Tente usar time.sleep(2)
+
+Erro Hugging Face:
+
+* Verifique permissões da chave
+* Alguns modelos exigem aceite de termos
+
+PDF com caracteres estranhos:
+
+* Limitação do encoding latin-1
+* Já tratado com função limpar()
+
+---
+
+MELHORIAS FUTURAS
+
+* Avaliação automática das respostas
+* Integração com banco de dados
+* Dashboard com resultados
+* Uso de embeddings para análise semântica
+
+---
+
+AUTOR
+
+Thomas Araujo
+
+---
+
+OBSERVAÇÃO
+
+Projeto voltado para pesquisa e experimentação com modelos de linguagem aplicados ao Direito.
+
+---
