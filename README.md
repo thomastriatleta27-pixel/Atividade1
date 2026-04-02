@@ -16,11 +16,6 @@ O projeto deve ser executado em **duas etapas** sequenciais no Google Colab:
 * **O que faz:** Carrega o dataset (`eduagarcia/oab_exams`), envia para o **Llama 3.1 8B**, realiza o "LLM-Judge" para validar o gabarito e classifica a questão (Área, Nível e Base Legal).
 
 
-### **Etapa 2: Geração do Relatório Final**
-* **Ação:** Instalar `reportlab` e `lxml`.
-* **O que faz:** Lê o XML gerado na Etapa 1, calcula métricas de precisão (%) e gera o layout visual.
-* **Saída:** Arquivo `Relatorio_Thomas_Final_XML.pdf`.
-
 ---
 
 ## 📂 Estrutura de Arquivos do Repositório
