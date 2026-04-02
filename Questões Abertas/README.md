@@ -1,124 +1,31 @@
-RELATÓRIO AUTOMATIZADO COM LLMS (OAB BENCH) Questões de 11 a 20
+# OAB Bench: Relatório Automatizado com Multi-LLMs (Questões Abertas) ⚖️
 
-Este projeto utiliza múltiplos modelos de IA para responder questões abertas do dataset OAB Bench, gerando automaticamente um relatório em PDF com as respostas.
-
----
-
-TECNOLOGIAS UTILIZADAS
-
-* Groq API (LLAMA 3.3 70B e 3.1 8B)
-* Hugging Face (Qwen 2.5)
-* Google Colab
-* Python
-* FPDF (geração de PDF)
+Este projeto utiliza um ecossistema de múltiplos modelos de Linguagem de Grande Escala (LLMs) para processar e responder questões abertas do dataset **OAB Bench**, gerando automaticamente um relatório comparativo em PDF.
 
 ---
 
-DATASET
+## 🔄 Visão Geral do Pipeline
 
-Utilizado dataset público:
-maritaca-ai/oab-bench
+O sistema realiza a consulta simultânea a três modelos distintos para permitir a comparação de qualidade e semântica das respostas jurídicas.
 
----
-
-COMO EXECUTAR NO GOOGLE COLAB
-
-1. Acesse o Colab:
-   https://colab.research.google.com/
+**Fluxo:**
+`[Dataset OAB]` → `[LLM Ensemble (Llama 70B, Llama 8B, Qwen 2.5)]` → `[Tratamento de Encoding]` → `[Relatório PDF]`
 
 ---
 
-2. Instale as dependências:
+## 🛠️ Tecnologias Utilizadas
 
-!pip install groq
-!pip install fpdf
-!pip install huggingface_hub datasets
-
----
-
-3. Configure suas chaves de API:
-
-CHAVE_GROQ = "SUA_CHAVE_GROQ"
-CHAVE_HF   = "SUA_CHAVE_HF"
-
-IMPORTANTE:
-Nunca compartilhe suas chaves publicamente.
+* **Linguagem:** Python 3.x
+* **Provedores de IA:** * **Groq API:** Modelos `Llama 3.3 70B` (Alta performance) e `Llama 3.1 8B` (Velocidade).
+    * **Hugging Face:** Modelo `Qwen 2.5 7B` (Estabilidade).
+* **Dataset:** `maritaca-ai/oab-bench` (Questões abertas).
+* **Geração de Documentos:** Bibliotecas `FPDF` e `Pandas`.
 
 ---
 
-4. Execute o código
+## 🚀 Como Executar no Google Colab
 
-Rode todas as células do notebook.
-
-O script irá:
-
-* Carregar o dataset
-* Processar as questões
-* Consultar 3 modelos de IA:
-
-  * LLAMA 70B (alta qualidade)
-  * LLAMA 8B (rápido)
-  * Qwen 2.5 (estável)
-* Gerar um relatório final em PDF
-
----
-
-SAÍDA
-
-Arquivo gerado:
-Relatorio_Thomas_Lote_11_20.pdf
-
-Para baixar no Colab:
-
-from google.colab import files
-files.download("Relatorio_Thomas_Lote_11_20.pdf")
-
----
-
-ESTRUTURA DO PROJETO
-
-* Entrada: questões abertas da OAB
-* Processamento: múltiplas LLMs
-* Saída: PDF comparativo com respostas
-
----
-
-POSSÍVEIS PROBLEMAS
-
-Erro 400 (Groq):
-
-* Pode ser limite de requisição
-* Tente usar time.sleep(2)
-
-Erro Hugging Face:
-
-* Verifique permissões da chave
-* Alguns modelos exigem aceite de termos
-
-PDF com caracteres estranhos:
-
-* Limitação do encoding latin-1
-* Já tratado com função limpar()
-
----
-
-MELHORIAS FUTURAS
-
-* Avaliação automática das respostas
-* Integração com banco de dados
-* Dashboard com resultados
-* Uso de embeddings para análise semântica
-
----
-
-AUTOR
-
-Thomas Araujo
-
----
-
-OBSERVAÇÃO
-
-Projeto voltado para pesquisa e experimentação com modelos de linguagem aplicados ao Direito.
-
----
+### 1️⃣ Preparação do Ambiente
+Instale as dependências necessárias:
+```bash
+!pip install groq fpdf huggingface_hub datasets
