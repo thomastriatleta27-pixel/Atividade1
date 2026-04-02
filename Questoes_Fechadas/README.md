@@ -43,6 +43,5 @@ As questões são classificadas em quatro níveis de complexidade jurídica:
 
 ## 🧑‍💻 Autor
 **Thomás Araujo**
-*NOC Assistant | Grupo 01 - Curadoria OAB*
 
 > **Nota:** Certifique-se de instalar as dependências (`pip install reportlab pandas groq datasets`) antes de iniciar a execução no Google Colab.
