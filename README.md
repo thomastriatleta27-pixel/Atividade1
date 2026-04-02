@@ -56,4 +56,3 @@ O projeto deve ser executado em **duas etapas** sequenciais no Google Colab:
 
 ## 🧑‍💻 Autor
 **Thomás Araujo**
-*NOC Assistant | Estudante de Computação*
