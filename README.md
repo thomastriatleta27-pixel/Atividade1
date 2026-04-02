@@ -57,4 +57,4 @@ As questões foram categorizadas conforme o dataset original e refinamento:
 * **Bibliotecas:** `pandas`, `groq`, `huggingface_hub`, `datasets`, `fpdf`.
 
 ## 🧑‍💻 Autor
-**Thomás Araujo** *NOC Assistant | Estudante de Computação*
+**Thomás Araujo** 
