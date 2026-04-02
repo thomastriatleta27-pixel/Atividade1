@@ -1,6 +1,6 @@
 # RELATÓRIO AUTOMATIZADO COM LLMS + CURADORIA (OAB BENCH) ⚖️
 
-Este projeto implementa um pipeline de Inteligência Artificial para o processamento, classificação e análise de performance de questões fechadas do Exame da Ordem (OAB).
+Este projeto implementa um pipeline de Inteligência Artificial para o processamento, classificação e análise de performance de questões fechadas do Exame da Ordem (OAB). de 107- 212
 
 ---
 
