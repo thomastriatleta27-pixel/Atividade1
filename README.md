@@ -14,7 +14,7 @@ O projeto deve ser executado em **duas etapas** sequenciais no Google Colab:
 ### **Etapa 1: Processamento e Inferência**
 * **Ação:** Instalar `groq`, `pandas` e `datasets`. Configurar a `CHAVE_GROQ`.
 * **O que faz:** Carrega o dataset (`eduagarcia/oab_exams`), envia para o **Llama 3.1 8B**, realiza o "LLM-Judge" para validar o gabarito e classifica a questão (Área, Nível e Base Legal).
-* **Saída:** Arquivo `curadoria_thomas.xml`.
+
 
 ### **Etapa 2: Geração do Relatório Final**
 * **Ação:** Instalar `reportlab` e `lxml`.
